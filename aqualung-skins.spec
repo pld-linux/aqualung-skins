@@ -13,6 +13,7 @@ Source1:	http://aqualung.sf.net/skins/aqualung-metal.tar.gz
 Source2:	http://aqualung.sf.net/skins/aqualung-woody.tar.gz
 # Source2-md5:	d13546c75e5712d9fed880d0e3a7e792
 URL:		http://aqualung.sourceforge.net/
+Requires:       aqualung
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
