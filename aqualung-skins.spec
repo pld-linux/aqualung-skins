@@ -1,4 +1,3 @@
-#
 Summary:	Aqualung - additional skins
 Summary(pl):	Aqualung - dodatkowe skórki
 Name:		aqualung-skins
@@ -13,66 +12,75 @@ Source1:	http://aqualung.sf.net/skins/aqualung-metal.tar.gz
 Source2:	http://aqualung.sf.net/skins/aqualung-woody.tar.gz
 # Source2-md5:	d13546c75e5712d9fed880d0e3a7e792
 URL:		http://aqualung.sourceforge.net/
-Requires:       aqualung
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Additional skins for aqualung
+Additional skins for Aqualung.
 
 %description -l pl
-Dodatkowe skórki
+Dodatkowe skórki dla Aqualunga.
 
-%package -n %{name}-dark
-Summary:	Dark skin for aqualung
-Summary(pl):	Skórka Dark
+%package dark
+Summary:	Dark skin for Aqualung
+Summary(pl):	Skórka Dark dla Aqualunga
 Group:		X11/Applications/Multimedia
+Requires:	aqualung
 
-%description -n %{name}-dark
+%description dark
 Dark, XMMS-like colors. Your eye won't get burned.
 
-%package -n %{name}-metal
-Summary:	Metal skin for aqualung
-Summary(pl):	Skórka Metal
-Group:		X11/Applications/Multimedia
+%description dark -l pl
+Ciemne kolory podobne do XMMS-a. Nie wypal± oczu.
 
-%description -n %{name}-metal
+%package metal
+Summary:	Metal skin for Aqualung
+Summary(pl):	Skórka Metal dla Aqualunga
+Group:		X11/Applications/Multimedia
+Requires:	aqualung
+
+%description metal
 Modern looking, shining metal colors.
 
-%package -n %{name}-woody
-Summary:	Woody skin for aqualung
-Summary(pl):	Skórka Woody
-Group:		X11/Applications/Multimedia
+%description metal -l pl
+Nowocze¶nie wygl±daj±ce kolory b³yszcz±cego metalu.
 
-%description -n %{name}-woody
+%package woody
+Summary:	Woody skin for aqualung
+Summary(pl):	Skórka Woody dla Aqualunga
+Group:		X11/Applications/Multimedia
+Requires:	aqualung
+
+%description woody
 Warm look&feel, for those who like natural surfaces.
 
-%prep
-%setup -q -n aqualung-skins -c -a 1 -a 2 
+%description woody -l pl
+Ciep³y wygl±d, dla lubi±cych naturalne powierzchnie.
 
-%build
+%prep
+%setup -q -c -a1 -a2 
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_datadir}/aqualung/skin
 
-install -d $RPM_BUILD_ROOT%{_datadir}/aqualung/skin/
 for i in dark metal woody; do
-	cp -rf $i $RPM_BUILD_ROOT%{_datadir}/aqualung/skin/
+	cp -rf $i $RPM_BUILD_ROOT%{_datadir}/aqualung/skin
 done
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -n %{name}-dark
+%files dark
 %defattr(644,root,root,755)
 %dir %{_datadir}/aqualung/skin/dark
 %{_datadir}/aqualung/skin/dark/*
 
-%files -n %{name}-metal
+%files metal
 %defattr(644,root,root,755)
 %dir %{_datadir}/aqualung/skin/metal
 %{_datadir}/aqualung/skin/metal/*
 
-%files -n %{name}-woody
+%files woody
 %defattr(644,root,root,755)
 %dir %{_datadir}/aqualung/skin/woody
 %{_datadir}/aqualung/skin/woody/*
