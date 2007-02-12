@@ -1,5 +1,5 @@
 Summary:	Aqualung - additional skins
-Summary(pl):	Aqualung - dodatkowe skórki
+Summary(pl.UTF-8):   Aqualung - dodatkowe skÃ³rki
 Name:		aqualung-skins
 Version:	0
 Release:	1
@@ -17,44 +17,44 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Additional skins for Aqualung.
 
-%description -l pl
-Dodatkowe skórki dla Aqualunga.
+%description -l pl.UTF-8
+Dodatkowe skÃ³rki dla Aqualunga.
 
 %package dark
 Summary:	Dark skin for Aqualung
-Summary(pl):	Skórka Dark dla Aqualunga
+Summary(pl.UTF-8):   SkÃ³rka Dark dla Aqualunga
 Group:		X11/Applications/Multimedia
 Requires:	aqualung
 
 %description dark
 Dark, XMMS-like colors. Your eye won't get burned.
 
-%description dark -l pl
-Ciemne kolory podobne do XMMS-a. Nie wypal± oczu.
+%description dark -l pl.UTF-8
+Ciemne kolory podobne do XMMS-a. Nie wypalÄ… oczu.
 
 %package metal
 Summary:	Metal skin for Aqualung
-Summary(pl):	Skórka Metal dla Aqualunga
+Summary(pl.UTF-8):   SkÃ³rka Metal dla Aqualunga
 Group:		X11/Applications/Multimedia
 Requires:	aqualung
 
 %description metal
 Modern looking, shining metal colors.
 
-%description metal -l pl
-Nowocze¶nie wygl±daj±ce kolory b³yszcz±cego metalu.
+%description metal -l pl.UTF-8
+NowoczeÅ›nie wyglÄ…dajÄ…ce kolory bÅ‚yszczÄ…cego metalu.
 
 %package woody
 Summary:	Woody skin for aqualung
-Summary(pl):	Skórka Woody dla Aqualunga
+Summary(pl.UTF-8):   SkÃ³rka Woody dla Aqualunga
 Group:		X11/Applications/Multimedia
 Requires:	aqualung
 
 %description woody
 Warm look&feel, for those who like natural surfaces.
 
-%description woody -l pl
-Ciep³y wygl±d, dla lubi±cych naturalne powierzchnie.
+%description woody -l pl.UTF-8
+CiepÅ‚y wyglÄ…d, dla lubiÄ…cych naturalne powierzchnie.
 
 %prep
 %setup -q -c -a1 -a2 
