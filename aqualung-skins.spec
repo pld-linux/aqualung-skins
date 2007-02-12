@@ -1,5 +1,5 @@
 Summary:	Aqualung - additional skins
-Summary(pl.UTF-8):   Aqualung - dodatkowe skórki
+Summary(pl.UTF-8):	Aqualung - dodatkowe skórki
 Name:		aqualung-skins
 Version:	0
 Release:	1
@@ -22,7 +22,7 @@ Dodatkowe skórki dla Aqualunga.
 
 %package dark
 Summary:	Dark skin for Aqualung
-Summary(pl.UTF-8):   Skórka Dark dla Aqualunga
+Summary(pl.UTF-8):	Skórka Dark dla Aqualunga
 Group:		X11/Applications/Multimedia
 Requires:	aqualung
 
@@ -34,7 +34,7 @@ Ciemne kolory podobne do XMMS-a. Nie wypalą oczu.
 
 %package metal
 Summary:	Metal skin for Aqualung
-Summary(pl.UTF-8):   Skórka Metal dla Aqualunga
+Summary(pl.UTF-8):	Skórka Metal dla Aqualunga
 Group:		X11/Applications/Multimedia
 Requires:	aqualung
 
@@ -46,7 +46,7 @@ Nowocześnie wyglądające kolory błyszczącego metalu.
 
 %package woody
 Summary:	Woody skin for aqualung
-Summary(pl.UTF-8):   Skórka Woody dla Aqualunga
+Summary(pl.UTF-8):	Skórka Woody dla Aqualunga
 Group:		X11/Applications/Multimedia
 Requires:	aqualung
 
